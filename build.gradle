@@ -1,5 +1,11 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 sourceCompatibility = "1.8"
+mainClassName = "com.github.apimenov.game.of.rooks.MoveSimulation"
+
+tasks.withType(JavaCompile){
+    options.encoding = "UTF-8"
+}
