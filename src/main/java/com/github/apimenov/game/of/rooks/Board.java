@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class Board {
 
-    static final int SIZE = 6;
+    static final int SIZE = 8;
 
     private BoardCell[][] cells = new BoardCell[SIZE][SIZE];
 
