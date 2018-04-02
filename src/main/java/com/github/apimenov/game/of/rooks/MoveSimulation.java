@@ -16,7 +16,7 @@ public class MoveSimulation {
 
 
     public MoveSimulation(int numberOfRooks){
-        executor = Executors.newFixedThreadPool(numberOfRooks+1);
+        executor = Executors.newFixedThreadPool(numberOfRooks);
         rooks = new ArrayList<>(numberOfRooks);
         Board board = new Board();
         CyclicBarrier barrier = new CyclicBarrier(numberOfRooks);
